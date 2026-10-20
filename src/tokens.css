@@ -1,0 +1,123 @@
+/* OS Scheduling Comparator — Design Tokens
+   Single source of truth for color, type, spacing, radius, shadow.
+   Consume via var(--token). Do not hardcode raw values in components.
+
+   Theme: Midnight Sage × Lavender
+   - graphite surfaces carry the interface;
+   - sage mint marks primary actions and active states;
+   - lavender marks secondary/technical emphasis;
+   - amber survives only as a semantic warning color. */
+:root {
+  /* ---- Color: surfaces (layered graphite) ---- */
+  --canvas: #0C1112;
+  --surface: #171E20;
+  --surface-2: #1D2729;
+  --surface-elevated: #242D33;
+  --border: #303A40;
+  --border-strong: #3F4B52; /* hover / active emphasis */
+
+  /* ---- Color: text ---- */
+  --text-primary: #E5E7EB;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+
+  /* ---- Color: accents ---- */
+  --accent: #6EE7B7;          /* sage mint — primary actions, active states */
+  --accent-press: #52D3A3;
+  --accent-ink: #0C1112;      /* text on mint fills */
+  --accent-soft: rgba(110, 231, 183, 0.12);
+  --accent-line: rgba(110, 231, 183, 0.30);
+  --lavender: #C4B5FD;        /* secondary interactive / technical emphasis */
+  --lavender-soft: rgba(196, 181, 253, 0.12);
+  --lavender-line: rgba(196, 181, 253, 0.30);
+  --analysis: #93C5FD;        /* informational cool blue */
+
+  /* ---- Color: semantic status ---- */
+  --success: #86EFAC;
+  --success-soft: rgba(134, 239, 172, 0.12);
+  --success-line: rgba(134, 239, 172, 0.30);
+  --warning: #D9A441;         /* muted amber — warnings only */
+  --warning-soft: rgba(217, 164, 65, 0.10);
+  --warning-line: rgba(217, 164, 65, 0.32);
+  --error: #F87171;
+  --error-soft: rgba(248, 113, 113, 0.10);
+  --error-line: rgba(248, 113, 113, 0.32);
+  --info-soft: rgba(147, 197, 253, 0.10);
+
+  /* ---- Process palette (categorical, distinct on graphite) ---- */
+  --p1: #6EE7B7;
+  --p2: #C4B5FD;
+  --p3: #7DD3FC;
+  --p4: #FDA4AF;
+  --p5: #FDE68A;
+  --p6: #F0ABFC;
+  --idle: #2A353B;
+
+  /* ---- Typography
+     IBM Plex: computing heritage, distinctive character vs Inter. */
+  --font-ui: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --fs-2xs: 11px;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-base: 14px;
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 22px;
+  --fs-2xl: 30px;
+  --fs-3xl: 42px;
+  --fs-display: 54px;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.65;
+
+  --fw-reg: 400;
+  --fw-med: 500;
+  --fw-semi: 600;
+  --fw-bold: 700;
+
+  /* ---- Spacing scale (4 -> 64) ---- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-7: 32px;
+  --sp-8: 40px;
+  --sp-9: 48px;
+  --sp-10: 64px;
+
+  /* ---- Radius (sharpened for technical/instrument feel) ---- */
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 8px;
+  --r-xl: 12px;
+  --r-pill: 999px;
+
+  /* ---- Border ---- */
+  --border-w: 1px;
+
+  /* ---- Shadow (restrained depth, neutral black) ---- */
+  --shadow-panel: 0 1px 0 rgba(0, 0, 0, 0.45), 0 6px 16px rgba(0, 0, 0, 0.16);
+  --shadow-overlay: 0 14px 40px rgba(0, 0, 0, 0.52);
+  --shadow-pop: 0 2px 8px rgba(0, 0, 0, 0.42);
+
+  /* ---- Focus ring ---- */
+  --focus-ring: 0 0 0 2px var(--canvas), 0 0 0 4px var(--accent);
+
+  /* ---- Instrument: minimal glow + neutral graticule ---- */
+  --glow-sm: 0 0 6px rgba(110, 231, 183, 0.14);
+  --glow-md: 0 0 10px rgba(110, 231, 183, 0.20);
+  --grid-line: rgba(148, 163, 184, 0.035);
+  --grid-line-strong: rgba(148, 163, 184, 0.06);
+  --capture-frame: #0A1011;   /* recessed chart/scope face */
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur: 180ms;
+  --dur-lg: 220ms;
+}

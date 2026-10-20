@@ -1,0 +1,29 @@
+node_modules/
+
+# Environment, credentials, and private configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*
+
+# Logs, temporary files, and editor/OS noise
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Local backups and generated artifacts
+*.bak
+*.backup
+*.old
+coverage/
+dist/
+build/

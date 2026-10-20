@@ -1,0 +1,10 @@
+{
+  "name": "os-scheduling-comparator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CPU scheduling simulator and benchmark workstation — six algorithms, real timelines, local reports.",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node test/scheduler.test.js && node test/state.test.js && node test/presets.test.js && node test/explanations.test.js && node test/playback.test.js && node test/comparison.test.js && node test/benchmark.test.js && node test/reports.test.js && node test/persistence.test.js && node test/app.smoke.js && node test/motion.test.js"
+  }
+}
